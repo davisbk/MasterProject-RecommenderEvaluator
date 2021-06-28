@@ -5,17 +5,17 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 /**
- * Data structure to represent a user with the ratings tied to him/her.
+ * Data structure to represent a User with the ratings tied to him/her.
  * 
  */
 final public class User implements Comparable {
     
-    final private int id, age_range, occupation, zipCode; // The user's unique identifier, their age, occupation, and zip code
-    final private String gender; // The user's gender
-    private double avgRating; // The average rating this user gives to movies
+    final private int id, age_range, occupation, zipCode; // The User's unique identifier, their age, occupation, and zip code
+    final private String gender; // The User's gender
+    private double avgRating; // The average rating this User gives to movies
     
-    private ArrayList<Rating> trainingRatings; // The user's training set of Ratings
-    private ArrayList<Rating> testRatings; // The user's test set of Ratings
+    private ArrayList<Rating> trainingRatings; // The User's training set of Ratings
+    private ArrayList<Rating> testRatings; // The User's test set of Ratings
     
     /**
      * Constructor
@@ -40,7 +40,7 @@ final public class User implements Comparable {
     
     /**
      * Constructor from existing User with training and test ratings 
-     * @param user The user to copy
+     * @param user The User to copy
      * @param trainingRatings The training set to copy
      * @param testRatings  The test set to copy
      */
@@ -57,7 +57,7 @@ final public class User implements Comparable {
     
     /**
      * Copy Constructor from existing User
-     * @param user to copy
+     * @param user The User to copy
      */
     public User(User user)  {
         this.id = user.id;
@@ -93,7 +93,7 @@ final public class User implements Comparable {
     }
     
     /**
-     * Returns this user's average rating, i.e. the rating they usually give to 
+     * Returns this User's average rating, i.e. the rating they usually give to 
      * movies. It calculates this number if it has not already been done.
      * @return 
      */
@@ -108,8 +108,8 @@ final public class User implements Comparable {
             
    
     /**
-     * Returns the training set of Ratings for this user.
-     * @return The training set of Ratings for this user
+     * Returns the training set of Ratings for this User.
+     * @return The training set of Ratings for this User
      */
     public ArrayList<Rating> getTrainingRatings() {
         ArrayList<Rating> result = new ArrayList<>(trainingRatings);
@@ -119,7 +119,7 @@ final public class User implements Comparable {
     /**
      * Returns the test set of Ratings for this User.
      * 
-     * @return The test set of Ratings for this user
+     * @return The test set of Ratings for this User
      */
     public ArrayList<Rating> getTestRatings() {
        ArrayList<Rating> result = new ArrayList<>(testRatings);
@@ -145,7 +145,7 @@ final public class User implements Comparable {
    
         
     /**
-     * Sets the training set for this user. Used only for debugging.
+     * Sets the training set for this User. Used only for debugging.
      * 
      * @param trainingRatings 
      */
@@ -155,7 +155,7 @@ final public class User implements Comparable {
     }
     
     /**
-     * Sets the test set for this user. Used only for debugging.
+     * Sets the test set for this User. Used only for debugging.
      * 
      * @param testRatings 
      */
@@ -164,8 +164,8 @@ final public class User implements Comparable {
         this.testRatings = testRatings;
     }
     /**
-     * Calculates the average rating given by this user across all ratings in
-     * the user's training set. 
+     * Calculates the average rating given by this User across all ratings in
+     * the User's training set. 
      * 
      * @return the average rating value
      */
@@ -188,7 +188,7 @@ final public class User implements Comparable {
      * For sorting the Users by ID
      * 
      * @param t Other object to compare to.
-     * @return True if both users are the same object or if the have the same id.
+     * @return True if both Users are the same object or if the have the same id.
      */
     @Override
     public int compareTo(Object t) {

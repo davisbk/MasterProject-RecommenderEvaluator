@@ -11,16 +11,16 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 final public class Movie implements Comparable {
     
     final private PropertiesHash properties;
-    final private int id; //Unique identifier for a movie
-    final private String uri; // The Uniform Resource Identifier for this movie
-    final private String title; // The name of this movie
+    final private int id; //Unique identifier for a Movie
+    final private String uri; // The Uniform Resource Identifier for this Movie
+    final private String title; // The name of this Movie
     
     /**
      * Constructor
-     * @param id The unique identifying number for this movie
-     * @param uri The Uniform Resource Identifier for the new movie
-     * @param title The title of the movie
-     * @param properties Properties for the movie
+     * @param id The unique identifying number for this Movie
+     * @param uri The Uniform Resource Identifier for the new Movie
+     * @param title The title of the Movie
+     * @param properties Properties for the Movie
      */
     public Movie(int id, String uri, String title, PropertiesHash properties) {
         this.id = id;
@@ -46,7 +46,7 @@ final public class Movie implements Comparable {
     }
 
     /**
-     * @return A property vector with the properties and values of the movie.
+     * @return A PropertyVector with the properties and values of the Movie.
      */
     public PropertiesHash getProperties() {
         return new PropertiesHash(properties);
@@ -54,7 +54,7 @@ final public class Movie implements Comparable {
 
     /**
      *
-     * @return the unique identifier of the movie.
+     * @return the unique identifier of the Movie.
      */
     public int getId() {
         return id;
@@ -62,7 +62,7 @@ final public class Movie implements Comparable {
 
     /**
      * 
-     * @return the URI for the movie
+     * @return the URI for the Movie
      */
     public String getUri() {
         return uri;
@@ -70,7 +70,7 @@ final public class Movie implements Comparable {
 
     /**
      *
-     * @return the title of the movie
+     * @return the title of the Movie
      */
     public String getTitle() {
         return title;
@@ -78,7 +78,7 @@ final public class Movie implements Comparable {
     
     /**
      *
-     * @return A String representation of the movie.
+     * @return A String representation of the Movie.
      */
     @Override 
     public String toString() {
@@ -94,9 +94,9 @@ final public class Movie implements Comparable {
     }
     
     /**
-     * Override for compareTo to compare two Movie objects. Compares by the movie's title.
+     * Override for compareTo to compare two Movie objects. Compares by the Movie's title.
      * 
-     * @param t Object to compare a movie to
+     * @param t Object to compare a Movie to
      * @return 1, 0, -1 if t's title String is greater than, equal to, or less than this String, ignoring case considerations.
      * 
      */
@@ -118,7 +118,7 @@ final public class Movie implements Comparable {
     /**
      *
      * @param obj Object to check if equal to
-     * @return returns true if both movies contain the same information.
+     * @return returns true if both Movies contain the same information.
      */
     @Override
     public boolean equals(Object obj)  {

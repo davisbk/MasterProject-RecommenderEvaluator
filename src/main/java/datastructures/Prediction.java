@@ -11,7 +11,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
  */
 final public class Prediction implements Comparable {
     private final Movie movie; // The Movie whose value will be predicted
-    private final double value; // The predicted value for this movie
+    private final double value; // The predicted value for this Movie
 
     /**
      * Constructor
@@ -75,7 +75,7 @@ final public class Prediction implements Comparable {
      * Compares two predictions for equivalence 
      * 
      * @param obj
-     * @return true if they are logically equivalent (same movie, and value)
+     * @return true if they are logically equivalent (same Movie, and value)
      */
     @Override
     public boolean equals(Object obj)  {
