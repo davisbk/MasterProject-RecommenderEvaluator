@@ -30,6 +30,7 @@ public class BrianMain {
     final static double NANO_TO_SEC = 1000000000;
     public static void main(String[] args) {
         
+        // Storing start and stop time for timers
         long dbStartTime;// = System.nanoTime();
         long dbStopTime = System.nanoTime();
         long totalStartTime = System.nanoTime();

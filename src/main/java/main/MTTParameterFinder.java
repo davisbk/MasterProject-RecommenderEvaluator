@@ -34,7 +34,7 @@ import utils.Printer;
 import utils.Settings;
 
 /**
- * This class performs a grid search of the parameter space for the MTT recommender for 100 users in order to
+ * This class performs a grid search of the parameter space for the MTT Recommender for 100 users in order to
  * find the best parameters.
  * 
  * @author Brian Davis
