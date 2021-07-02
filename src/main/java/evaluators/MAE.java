@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * Mean Absolute Error 
- * Difference between each predicted value and the real rating for that movie, for each prediction of an user.
+ * Difference between each predicted value and the real rating for that movie, for each prediction of a User.
  * For additional information see: https://en.wikipedia.org/wiki/Mean_absolute_error
  * @author Brian Davis
  */
